@@ -11,14 +11,15 @@ Il progetto è composto da due componenti principali:
 
 Struttura dei file:
 
-simple-phonebook/
+```
+$simple-phonebook/
 │
 ├── server.py
 ├── client.py
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
+```
 ## Funzionalità
 
 - Creazione di nuovi contatti
