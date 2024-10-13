@@ -1,8 +1,11 @@
 # API Semplice Rubrica Telefonica
 
+![Python](https://img.shields.io/badge/python-v3.7+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
 Questo progetto implementa una semplice API per una rubrica telefonica con operazioni CRUD utilizzando Python, Flask e SQLite.
 
-## Struttura del Progetto
+## 📁 Struttura del Progetto
 
 Il progetto è composto da due componenti principali:
 
@@ -20,7 +23,7 @@ $simple-phonebook/
 ├── README.md
 └── .gitignore
 ```
-## Funzionalità
+## 🚀 Funzionalità
 
 - Creazione di nuovi contatti
 - Recupero di tutti i contatti
@@ -48,7 +51,7 @@ $simple-phonebook/
    pip install -r requirements.txt
    ```
 
-## Utilizzo
+## 🖥️ Utilizzo
 
 ### Avvio del Server
 
