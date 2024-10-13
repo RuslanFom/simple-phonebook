@@ -61,20 +61,33 @@ simple-phonebook/
 
 Il file `client.py` fornisce funzioni per interagire con l'API. Ecco un esempio di come utilizzarlo:
 
-        
-python
-from client import create_contact, get_all_contacts, get_contact, update_contact, delete_contact
+ ```       
+python client.py
+ ```      
+from client 
+ ``` 
+import create_contact, get_all_contacts, get_contact, update_contact, delete_contact
+ ``` 
 Create a new contact
+ ``` 
 create_contact('John', 'Doe', 'john@example.com', '+1234567890')
+ ``` 
 Get all contacts
+ ``` 
 get_all_contacts()
+ ``` 
 Get a specific contact (assuming ID is 1)
+ ``` 
 get_contact(1)
+ ``` 
 Update a contact
+ ``` 
 update_contact(1, name='Jane', phone='+9876543210')
+ ``` 
 Delete a contact
+ ``` 
 delete_contact(1)
-
+ ``` 
 
 ## Endpoint API
 
