@@ -1,8 +1,11 @@
 # API Semplice Rubrica Telefonica
 
+![Python](https://img.shields.io/badge/python-v3.7+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
 Questo progetto implementa una semplice API per una rubrica telefonica con operazioni CRUD utilizzando Python, Flask e SQLite.
 
-## Struttura del Progetto
+## 📁 Struttura del Progetto
 
 Il progetto è composto da due componenti principali:
 
@@ -11,15 +14,15 @@ Il progetto è composto da due componenti principali:
 
 Struttura dei file:
 
-87777777777777777777777777simple-phonebook/
+simple-phonebook/
 │
 ├── server.py
 ├── client.py
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
-## Funzionalità
+```
+## 🚀 Funzionalità
 
 - Creazione di nuovi contatti
 - Recupero di tutti i contatti
@@ -32,7 +35,7 @@ Struttura dei file:
 
 1. Clona il repository:
    ```
-   git clone https://github.com/tuousername/simple-phonebook.git
+   git clone https://github.com/RuslanFom/simple-phonebook.git
    cd simple-phonebook
    ```
 
@@ -47,7 +50,7 @@ Struttura dei file:
    pip install -r requirements.txt
    ```
 
-## Utilizzo
+## 🖥️ Utilizzo
 
 ### Avvio del Server
 
@@ -61,20 +64,33 @@ Struttura dei file:
 
 Il file `client.py` fornisce funzioni per interagire con l'API. Ecco un esempio di come utilizzarlo:
 
-```         
-python
-from client import create_contact, get_all_contacts, get_contact, update_contact, delete_contact
+ ```       
+python client.py
+ ```      
+from client 
+ ``` 
+import create_contact, get_all_contacts, get_contact, update_contact, delete_contact
+ ``` 
 Create a new contact
+ ``` 
 create_contact('John', 'Doe', 'john@example.com', '+1234567890')
+ ``` 
 Get all contacts
+ ``` 
 get_all_contacts()
+ ``` 
 Get a specific contact (assuming ID is 1)
+ ``` 
 get_contact(1)
+ ``` 
 Update a contact
+ ``` 
 update_contact(1, name='Jane', phone='+9876543210')
+ ``` 
 Delete a contact
+ ``` 
 delete_contact(1)
-```
+ ``` 
 
 ## Endpoint API
 
