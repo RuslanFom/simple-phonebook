@@ -33,7 +33,7 @@ $simple-phonebook/
 
 1. Clona il repository:
    ```
-   git clone https://github.com/tuousername/simple-phonebook.git
+   git clone https://github.com/RuslanFom/simple-phonebook.git
    cd simple-phonebook
    ```
 
