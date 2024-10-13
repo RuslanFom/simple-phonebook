@@ -1,0 +1,52 @@
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Кэш Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Файлы базы данных SQLite
+*.db
+*.sqlite3
+
+# Логи
+*.log
+
+# Файлы среды разработки
+.vscode/
+.idea/
+
+# Файлы операционной системы
+.DS_Store
+Thumbs.db
+
+# Файлы конфигурации
+*.env
+*.cfg
+
+# Временные файлы
+*.tmp
+*.bak
+*.swp
+
+# Файлы зависимостей
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Файлы документации
+docs/_build/
+
+# Файлы покрытия кода тестами
+.coverage
+htmlcov/
+
+# Файлы сборки
+build/
+dist/
+*.egg-info/
+
+instance/
