@@ -2,6 +2,7 @@ import requests
 
 BASE_URL = 'http://localhost:5000'
 
+# Funzione per creare un nuovo contatto
 def create_contact(name, surname, email, phone):
     response = requests.post(f'{BASE_URL}/contacts', json={
         'name': name,
@@ -11,14 +12,17 @@ def create_contact(name, surname, email, phone):
     })
     print(response.json())
 
+# Funzione per ottenere tutti i contatti
 def get_all_contacts():
     response = requests.get(f'{BASE_URL}/contacts')
     print(response.json())
 
+# Funzione per ottenere un contatto specifico per ID
 def get_contact(id):
     response = requests.get(f'{BASE_URL}/contacts/{id}')
     print(response.json())
 
+# Funzione per aggiornare un contatto specifico per ID
 def update_contact(id, name=None, surname=None, email=None, phone=None):
     data = {}
     if name: data['name'] = name
@@ -28,23 +32,24 @@ def update_contact(id, name=None, surname=None, email=None, phone=None):
     response = requests.put(f'{BASE_URL}/contacts/{id}', json=data)
     print(response.json())
 
+# Funzione per eliminare un contatto specifico per ID
 def delete_contact(id):
     response = requests.delete(f'{BASE_URL}/contacts/{id}')
     print(response.json())
 
-# Пример использования
+# Esempio di utilizzo
 if __name__ == '__main__':
-    # Создание контакта
-    create_contact('Иван', 'Иванов', 'ivan@example.com', '+79123456789')
+    # Creazione di un contatto
+    create_contact('Mario', 'Rossi', 'mario.rossi@example.com', '+393757654321')
     
-    # Получение всех контактов
+    # Ottenimento di tutti i contatti
     get_all_contacts()
     
-    # Получение контакта по ID (предположим, что ID = 1)
+    # Ottenimento di un contatto specifico per ID (supponiamo che ID = 1)
     get_contact(1)
     
-    # Обновление контакта
-    update_contact(1, name='Петр', phone='+79987654321')
+    # Aggiornamento di un contatto
+    update_contact(1, name='Pietro', phone='+393757654321')
     
-    # Удаление контакта
+    # Eliminazione di un contatto
     delete_contact(1)
