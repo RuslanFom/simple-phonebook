@@ -14,7 +14,8 @@ Il progetto è composto da due componenti principali:
 
 Struttura dei file:
 
-simple-phonebook/
+```
+$simple-phonebook/
 │
 ├── server.py
 ├── client.py
